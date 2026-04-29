@@ -44,9 +44,9 @@
 
             <hr class="mt-5 mb-5">
 
-            <div class="bg-light rounded p-5">
+            <div class="bg-light rounded">
 
-                <p> lorem ipsum dolor sit amet </p>
+                <textarea class="form-control" rows="15"></textarea>
 
             </div>
         </div>
