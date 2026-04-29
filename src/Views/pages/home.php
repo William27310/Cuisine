@@ -13,7 +13,45 @@
 
 <body>
 
+    <div class="container">
 
+        <!-- Espacement -->
+        <hr class="text-white">
+        <hr class="text-white">
+        <hr class="text-white">
+        <hr class="text-white">
+        <!-- Espacement -->
+
+        <div class="bg-secondary-subtle p-5">
+
+            <div class="d-flex justify-content-between align-items-center vertical gap-5">
+
+                <div class="d-flex justify-content-center gap-5">
+                    <div class="Recette pt-3 rounded fw-bold bg-light">
+                        <p>Recette</p>
+                    </div>
+
+                    <div class="Date pt-3 rounded fw-bold bg-light">
+                        <p>Date</p>
+                    </div>
+                </div>
+
+
+                <div class="Date pt-3 border border-light rounded fw-bold bg-light">
+                    <p>Retour</p>
+                </div>
+            </div>
+
+            <hr class="mt-5 mb-5">
+
+            <div class="bg-light rounded p-5">
+
+                <p> lorem ipsum dolor sit amet </p>
+
+            </div>
+        </div>
+
+    </div>
 
 </body>
 
