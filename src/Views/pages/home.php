@@ -9,20 +9,14 @@
     <title>Accueil</title>
 </head>
 
-<?php require_once __DIR__ . "/../../Views/templates/navbar.php"; ?>
 
 <body>
 
+<?php require_once __DIR__ . "/../../Views/templates/navbar.php"; ?>
+
     <div class="container">
 
-        <!-- Espacement -->
-        <hr class="text-white">
-        <hr class="text-white">
-        <hr class="text-white">
-        <hr class="text-white">
-        <!-- Espacement -->
-
-        <div class="bg-secondary-subtle p-5">
+        <div class="bg-dark-subtle rounded p-5">
 
             <div class="d-flex justify-content-between align-items-center vertical gap-5">
 

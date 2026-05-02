@@ -1,9 +1,16 @@
 nav {
-    background: #E68907;
-    background: linear-gradient(180deg, rgba(230, 137, 7, 1) 0%, rgba(230, 137, 7, 1) 40%, rgba(230, 137, 7, 1) 100%);
+background: #3c3f47;
+background: linear-gradient(13deg, rgba(60, 63, 71, 1) 0%, rgba(60, 63, 71, 1) 35%, rgba(60, 63, 71, 1) 100%);
+margin-bottom: 7rem;
 }
 
-.Recette, .Date {
+.Recette,
+.Date {
     padding-left: 2rem;
     padding-right: 2rem;
+}
+
+body {
+    background: #1D4470;
+    background: linear-gradient(90deg, rgba(29, 68, 112, 1) 0%, rgba(29, 68, 112, 1) 35%, rgba(29, 68, 112, 1) 100%);
 }
