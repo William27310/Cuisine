@@ -18,10 +18,10 @@ switch ($parts[0]) {
         $controller->login();
         break;
 
-    // case 'register':
-    //     $controller = new UserController();
-    //     $controller->register();
-    //     break;
+    case 'register':
+        $controller = new UserController();
+        $controller->register();
+        break;
 
     default:
 

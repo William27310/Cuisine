@@ -28,12 +28,12 @@
 
                 <div class="d-flex flex-column justify-content-center align-items-center">
 
-                    <div class="mb-3 col-12 col-md-8">
+                    <div class="mb-3 col-12 col-sm-6 col-md-4">
                         <label for="exampleFormControlInput1" class="form-label">E-mail</label>
                         <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="E-mail" required>
                     </div>
 
-                    <div class="mb-3 col-12 col-md-8">
+                    <div class="mb-3 col-12 col-sm-6 col-md-4">
                         <label for="exampleFormControlInput1" class="form-label">Mot de passe</label>
                         <input type="password" class="form-control" id="exampleFormControlInput1" placeholder="Mot de passe" required>
                     </div>
