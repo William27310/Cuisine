@@ -13,6 +13,5 @@
       </div>
 
     </div>
-  <hr class="line bg-light"> 
   </nav>
 

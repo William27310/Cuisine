@@ -1,6 +1,7 @@
-<?php 
+<?php
 
-require_once __DIR__ . '/src/Controllers/HomeController.php';
+require 'src/Controllers/HomeController.php';
+require 'src/Controllers/UserController.php';
 
 $url = $_GET['url'] ?? 'home';
 
@@ -11,13 +12,19 @@ switch ($parts[0]) {
         $controller = new HomeController();
         $controller->index();
         break;
-    case 'about':
-        require 'controllers/about.php';
+
+    case 'login':
+        $controller = new UserController();
+        $controller->login();
         break;
-    case 'contact':
-        require 'controllers/contact.php';
-        break;
+
+    // case 'register':
+    //     $controller = new UserController();
+    //     $controller->register();
+    //     break;
+
     default:
+
         http_response_code(404);
         echo "Page not found";
         break;

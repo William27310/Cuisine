@@ -12,7 +12,7 @@
 
 <body>
 
-<?php require_once __DIR__ . "/../../Views/templates/navbar.php"; ?>
+    <?php require_once __DIR__ . "/../../Views/templates/navbar.php"; ?>
 
     <div class="container">
 
@@ -43,6 +43,10 @@
                 <textarea class="form-control" rows="15"></textarea>
 
             </div>
+
+            <button class="btn btn-dark mt-3"><a href="index.php?url=login" class="text-decoration-none text-white">Se connecter</a></button>
+            <button class="btn btn-dark mt-3"><a href="index.php?url=register" class="text-decoration-none text-white">S'inscrire</a></button>
+
         </div>
 
     </div>
