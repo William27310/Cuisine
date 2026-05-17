@@ -2,6 +2,7 @@
 
 require 'src/Controllers/HomeController.php';
 require 'src/Controllers/UserController.php';
+require 'src/Controllers/KitchenController.php';
 
 $url = $_GET['url'] ?? 'home';
 
@@ -11,6 +12,11 @@ switch ($parts[0]) {
     case 'home':
         $controller = new HomeController();
         $controller->index();
+        break;
+
+    case 'recipe':
+        $controller = new KitchenController();
+        $controller->recipe();
         break;
 
     case 'login':

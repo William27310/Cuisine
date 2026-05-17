@@ -40,3 +40,6 @@ If you want to start another PHP project alongside Cuisine:
 4. **Access it**: Visit `http://localhost/NewProject/` in your browser
 
 This way, you can have multiple projects under htdocs, each accessible as `http://localhost/ProjectName/`.
+
+
+Home Corriger
