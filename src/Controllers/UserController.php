@@ -21,6 +21,10 @@ class UserController
                     $errors['email'] = 'Caractère non autorisé';
                 }
             }
+
+            if (empty($_POST['password'])) {
+                $errors['password'] = "Veuillez entrer un mot de passe";
+            }
         }
     }
 
