@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./Bootstrap/css/bootstrap.min.css">
-    <link rel="stylesheet" href="./Bootstrap-Icon/fonts/bootstrap-icons.woff">
+    <link rel="stylesheet" href="./node_modules/bootstrap-icons/font/bootstrap-icons.css">
     <link rel="stylesheet" href="public/assets/css/style.css">
     <title>Accueil</title>
 </head>
@@ -29,7 +29,7 @@
                 <div class="d-flex justify-content-center align-items-center row first_input">
 
                     <div class="mb-3 col-12 col-sm-6 col-md-4">
-                        <div class="d-flex justify-content-between">
+                        <div class="d-flex justify-content-between border border-dark">
                             <label for="exampleFormControlInput1" class="form-label">E-mail</label>
                             <span class="text-danger text-end"><?= $errors['email'] ?? "" ?></span>
                         </div>
@@ -38,7 +38,7 @@
 
                 </div>
 
-                <div class="d-flex justify-content-center align-items-center second_input">
+                <div class="d-flex justify-content-center align-items-center row second_input">
 
                     <div class="mb-3 col-12 col-sm-6 col-md-4">
                         <div class="d-flex justify-content-between">
@@ -58,7 +58,7 @@
 
                 </div>
 
-                <div class="d-flex justify-content-center align-items-center third_input">
+                <div class="d-flex justify-content-center align-items-center row third_input">
 
                     <div class="mb-3 col-12 col-sm-6 col-md-4">
                         <div class="d-flex justify-content-between">

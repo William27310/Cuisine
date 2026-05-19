@@ -21,11 +21,5 @@ form .form-control {
   max-width: 360px;
   min-width: 360px;
 }
-
-form .form-control::placeholder {
-  font-size: 1rem;
-  line-height: 1.5;
-  opacity: 1;
-}
 /* Register View */
 
