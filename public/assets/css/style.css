@@ -14,3 +14,18 @@ body {
     background: #1D4470;
     background: linear-gradient(90deg, rgba(29, 68, 112, 1) 0%, rgba(29, 68, 112, 1) 35%, rgba(29, 68, 112, 1) 100%);
 }
+
+/* Register View */
+form .form-control {
+  width: 100%;
+  max-width: 360px;
+  min-width: 360px;
+}
+
+form .form-control::placeholder {
+  font-size: 1rem;
+  line-height: 1.5;
+  opacity: 1;
+}
+/* Register View */
+
