@@ -22,12 +22,12 @@
 
         <div class="p-5 d-flex justify-content-center flex-wrap gap-5">
 
-
+        <!-- Recette -->
             <div class="card" style="width: 20rem;">
                 <img src="..." class="card-img-top" alt="...">
                 <div class="card-body">
                     <h5 class="card-title">Card title</h5>
-                    <div class="gap-5">
+                    <div class="mt-auto d-flex flex-column flex-md-row gap-2 justify-content-center">
                         <a href="#" class="btn btn-dark">Accéder</a>
                         <a href="#" class="btn btn-dark">Modifier</a>
                         <a href="#" class="btn btn-dark">Supprimer</a>
