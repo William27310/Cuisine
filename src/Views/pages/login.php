@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./Bootstrap/css/bootstrap.min.css">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="./node_modules/bootstrap-icons/font/bootstrap-icons.css">
     <link rel="stylesheet" href="public/assets/css/style.css">
     <title>Accueil</title>
 </head>
@@ -29,13 +29,20 @@
                 <div class="d-flex flex-column justify-content-center align-items-center">
 
                     <div class="mb-3 col-12 col-sm-6 col-md-4">
-                        <label for="exampleFormControlInput1" class="form-label">E-mail</label>
-                        <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="E-mail" required>
+                        <div class="d-flex justify-content-between">
+                            <label for="exampleFormControlInput1" class="form-label">E-mail</label>
+                            <span class="text-danger text-end"><?= $errors['email'] ?? "" ?></span>
+                        </div>
+                        <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="E-mail" name="email" value="<?= $_POST['email'] ?? "" ?>">
                     </div>
 
                     <div class="mb-3 col-12 col-sm-6 col-md-4">
-                        <label for="exampleFormControlInput1" class="form-label">Mot de passe</label>
-                        <input type="password" class="form-control" id="exampleFormControlInput1" placeholder="Mot de passe" required>
+                        <div class="d-flex justify-content-between">
+                            <label for="exampleFormControlInput1" class="form-label">Mot de passe</label>
+                            <span class="text-danger text-end"><?= $errors['password'] ?? "" ?></span>
+                        </div>
+                        <input type="password" class="form-control" id="exampleFormControlInput1" placeholder="Mot de passe" name="password" value="<?= $_POST['password'] ?? "" ?>">
+
                     </div>
 
                 </div>

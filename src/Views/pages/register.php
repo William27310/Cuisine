@@ -10,13 +10,13 @@
 </head>
 
 
-<body>
+<body class="min-vh-100">
 
     <?php require_once __DIR__ . "/../../Views/templates/navbar.php"; ?>
 
     <div class="container">
 
-        <div class="bg-dark-subtle rounded p-5">
+        <div class="bg-dark-subtle rounded row p-5">
 
             <form action="index.php?url=register" method="post" class="d-flex flex-column gap-3">
 
@@ -29,7 +29,7 @@
                 <div class="d-flex justify-content-center align-items-center row first_input">
 
                     <div class="mb-3 col-12 col-sm-6 col-md-4">
-                        <div class="d-flex justify-content-between border border-dark">
+                        <div class="d-flex justify-content-between">
                             <label for="exampleFormControlInput1" class="form-label">E-mail</label>
                             <span class="text-danger text-end"><?= $errors['email'] ?? "" ?></span>
                         </div>

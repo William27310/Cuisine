@@ -46,6 +46,20 @@ class UserController
 
     public function login()
     {
+        if ($_SERVER['REQUEST_METHOD'] === 'POST') {
+            $errors = [];
+
+            if (isset($_POST['email'])) {
+                if (empty($_POST['email'])) {
+                    $errors['email'] = '<i class="bi bi-exclamation-circle-fill"></i>';
+                }
+            }
+
+            if (empty($_POST['password'])) {
+                $errors['password'] = '<i class="bi bi-exclamation-circle-fill"></i>';
+            }
+        }
+
         require_once __DIR__ . '/../Views/pages/login.php';
     }
 }
