@@ -30,6 +30,14 @@
 
                     <div class="mb-3 col-12 col-sm-6 col-md-4">
                         <div class="d-flex justify-content-between">
+                            <label for="exampleFormControlInput1" class="form-label">Nom d'utilisateur</label>
+                            <span class="text-danger text-end"><?= $errors['username'] ?? "" ?></span>
+                        </div>
+                        <input name="username" value="<?= $_POST['username'] ?? "" ?>" class="form-control" id="exampleFormControlInput1" placeholder="Nom d'utilisateur">
+                    </div>
+
+                    <div class="mb-3 col-12 col-sm-6 col-md-4">
+                        <div class="d-flex justify-content-between">
                             <label for="exampleFormControlInput1" class="form-label">E-mail</label>
                             <span class="text-danger text-end"><?= $errors['email'] ?? "" ?></span>
                         </div>

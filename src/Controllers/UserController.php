@@ -11,6 +11,12 @@ class UserController
         if ($_SERVER['REQUEST_METHOD'] === 'POST') {
             $errors = [];
 
+
+            if (empty($_POST['username'])) {
+                $errors['username'] = '<i class="bi bi-exclamation-circle-fill"></i>';
+            }
+        
+
             if (isset($_POST['email'])) {
                 if (empty($_POST['email'])) {
                     $errors['email'] = '<i class="bi bi-exclamation-circle-fill"></i>';
@@ -61,5 +67,16 @@ class UserController
         }
 
         require_once __DIR__ . '/../Views/pages/login.php';
+    }
+
+    public function logout()
+    {
+        session_destroy();
+        header('Location: index.php');
+    }
+
+    public function test()
+    {
+        require_once __DIR__ . '/../Views/pages/test.php';
     }
 }

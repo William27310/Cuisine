@@ -43,3 +43,5 @@ This way, you can have multiple projects under htdocs, each accessible as `http:
 
 
 Home Corriger
+
+http://localhost/Cuisine/index.php?url=test

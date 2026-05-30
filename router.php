@@ -29,6 +29,16 @@ switch ($parts[0]) {
         $controller->register();
         break;
 
+    case 'logout':
+        $controller = new UserController();
+        $controller->logout();
+        break;
+
+        case 'test':
+        $controller = new UserController();
+        $controller->test();
+        break;
+
     default:
 
         http_response_code(404);
